@@ -14,6 +14,9 @@ function App() {
             <button class="answer-btn">c) Answer 3</button>
             <button class="answer-btn">d) Answer 4</button>
           </div>
+          <div class="next">
+            <button>Next</button>
+          </div>
         </div>
 
       </div>

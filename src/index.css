@@ -9,14 +9,14 @@ body {
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  monospace;
 }
 
 html { 
+  background: url(../public/images/background_image.jpg) no-repeat center center fixed; 
   background-color: #FBE6E6;
-  /* background: url(background_image.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover; */
+  background-size: cover;
 }
