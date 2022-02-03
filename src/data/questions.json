@@ -1,0 +1,7 @@
+{"questions": {
+    "question1": "What is the correct command to create a new React project?",
+    "answers": ["npx create-react-app", 
+        "npx create-react-app myReactApp", 
+        "npm create-react-app", 
+        "npm create-react-app myReactApp"]
+}}
