@@ -1,7 +1,56 @@
-{"questions": {
-    "question1": "What is the correct command to create a new React project?",
-    "answers": ["npx create-react-app", 
-        "npx create-react-app myReactApp", 
-        "npm create-react-app", 
-        "npm create-react-app myReactApp"]
-}}
+{
+    "questions": {
+        "1": {
+            "question": "What is the correct command to create a new React project?",
+            "answers": [
+                {
+                    "bullet": "a",
+                    "answerText": "npx create-react-app",
+                    "isCorrect": false
+                },
+                {
+                    "bullet": "b",
+                    "answerText": "npx create-react-app myReactApp",
+                    "isCorrect": true
+                },
+                {
+                    "bullet": "c",
+                    "answerText": "npm create-react-app",
+                    "isCorrect": false
+                },
+                {
+                    "bullet": "d",
+                    "answerText": "npm create-react-app myReactApp",
+                    "isCorrect": false
+                }
+            ],
+            "id": 1
+        },
+        "2": {
+            "question": "What is the children prop?",
+            "answers": [
+                {
+                    "bullet": "a",
+                    "answerText": "A property that adds child values to state",
+                    "isCorrect": false
+                },
+                {
+                    "bullet": "b",
+                    "answerText": "A property that lets you nest components in other components",
+                    "isCorrect": true
+                },
+                {
+                    "bullet": "c",
+                    "answerText": "A property that lets you set an object as a property",
+                    "isCorrect": false
+                },
+                {
+                    "bullet": "d",
+                    "answerText": "A property that lets you set an object as a property",
+                    "isCorrect": false
+                }
+            ],
+            "id": 2
+        }
+    }
+}
