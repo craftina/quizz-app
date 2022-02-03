@@ -12,6 +12,8 @@ function App() {
     setCurrentQuestion(myData.questions[`${current}`]);
   }
 
+  
+
   return (
     <div className="App">
       <div className="react-quiz-container">

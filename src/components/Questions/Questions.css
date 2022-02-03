@@ -15,6 +15,10 @@
   .answer-btn:hover{
     background-color: #DF69D0;
   }
+
+  .active{
+    background-color: #DF69D0;
+  }
   
   /* .answer-btn:active{
     background-color: #DF69D0;
