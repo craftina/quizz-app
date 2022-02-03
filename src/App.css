@@ -11,31 +11,6 @@
 } */
 
 .react-quiz-container {
-  margin: 5em 0em;
+  margin: 7em 0em;
 }
 
-.question-wrapper {
-  background-color: #FEF0F9;
-  width: 50%;
-  margin: auto;
-  padding: 1em;
-  border-radius: 2em;
-}
-
-.answers {
-  text-align:center;
-}
-
-.answer-btn {
-  border-radius: 1em;
-  width: 80%;
-  margin: 1em;
-  padding: 0.5em;
-}
-
-.next button{
-  width: 25%;
-  border-radius: 1em;
-  padding: 0.5em;
-  margin: 2em;
-}
