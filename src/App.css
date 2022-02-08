@@ -21,13 +21,13 @@
 }
 
 
-.next button{
+.next-btn button{
   background-color: #FFBFC7;
   width: 25%;
   border-radius: 1em;
   padding: 0.5em;
   margin: 2em;
 }
-.next button:hover {
+.next-btn button:hover {
   background-color: #FF949F;
 }
