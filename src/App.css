@@ -31,3 +31,7 @@
 .next-btn button:hover {
   background-color: #FF949F;
 }
+
+.notice{
+  color: red;
+}

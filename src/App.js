@@ -8,46 +8,50 @@ function App() {
   let [currentQuestion, setCurrentQuestion] = useState(myData.questions["1"]);
   let [answers, setAnswers] = useState([]);
   let [submitButton, setSubmitButton] = useState('Next');
+  let [notice, setNotice] = useState('');
+
 
 
   function onClickNext(ev) {
     ev.preventDefault();
 
+    
     const form = ev.target.parentNode.parentNode;
     const buttons = form.querySelectorAll('input');
-    console.log(buttons);
+    let isAnswered = false;
     for (let i = 0; i < buttons.length; i++) {
       const el = buttons[i];
       if (el.classList.contains("active")) {
-
+        isAnswered = true;
         setAnswers(oldState => (
           [...oldState, el.name]));
-
-      } else {
-        console.log(false);
+        }
       }
+      
+      if (isAnswered === false) {
+        return setNotice('You must choose an answer!');
+      } else {
+        setNotice('');
+
+        if (ev.target.innerHTML === 'Next') {
+          setCurrent(++current);
+          setCurrentQuestion(myData.questions[`${current}`]);
+        } else if(ev.target.innerHTML === 'Result'){
+          console.log('result');
+        }
+      }
+      
     }
-
-    setCurrent(++current);
-    setCurrentQuestion(myData.questions[`${current}`]);
-  }
-
-
-  function onClickResult() {
-    console.log('result');
-  }
-
-  useEffect(() => {
+    
+    
+    
+    useEffect(() => {
     setSubmitButton(() =>
       Object.keys(myData.questions).length === (answers.length + 1)
         ? 'Result'
         : 'Next'
     );
   }, [answers.length])
-  // console.log(Object.keys(myData.questions).length);
-  // console.log(answers.length);
-  // console.log(Object.keys(myData.questions).length);
-
 
 
   return (
@@ -57,9 +61,10 @@ function App() {
           <form>
 
             <Question data={currentQuestion} />
+            <div className="notice">{notice}</div>
             <div className="next-btn">
               {submitButton === 'Result'
-                ? <button onClick={onClickResult}>Result</button>
+                ? <button onClick={onClickNext}>Result</button>
                 : <button onClick={onClickNext}>Next</button>
               }
             </div>
