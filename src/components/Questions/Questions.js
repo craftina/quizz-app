@@ -28,8 +28,8 @@ const Question = (props) => {
             <div className="answers">
                 {data.answers.map(a => {
                     return (
-                        <input key={`${data.id}${a.bullet}`} type="button"  className="answer-btn" 
-                        name={a.answerText} onClick={onClickButton} value={`${a.bullet}) ${a.answerText}`}/>                    
+                        <input key={a.idAnswer} type="button"  className="answer-btn" 
+                        name={a.idAnswer} onClick={onClickButton} value={`${a.bullet}) ${a.answerText}`}/>                    
                 )})}
             </div>
         </div>
