@@ -1,27 +1,23 @@
+.answers {
+  text-align: center;
+}
 
-  
-  .answers {
-    text-align:center;
-  }
-  
-  .answer-btn {
-    border-radius: 1em;
-    width: 80%;
-    margin: 1em;
-    padding: 0.5em;
-    background-color: #F4CDEF;
-  }
-  
-  .answer-btn:hover{
-    background-color: #DF69D0;
-  }
+.answer-btn {
+  font-size: 11pt;
+  border-radius: 1em;
+  border-color: #DF69D0;
+  width: 80%;
+  margin: 1em;
+  padding: 0.5em;
+  background-color: #F4CDEF;
+  white-space: initial;
+}
 
-  .active{
-    background-color: #DF69D0;
-  }
-  
-  /* .answer-btn:active{
-    background-color: #DF69D0;
-  } */
-  
-  
+.answer-btn:hover {
+  background-color: #DF69D0;
+}
+
+.active {
+  background-color: #DF69D0;
+}
+

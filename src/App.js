@@ -8,8 +8,7 @@ function App() {
   let [currentQuestion, setCurrentQuestion] = useState(myData.questions["1"]);
   let [submitButton, setSubmitButton] = useState('Next');
   let [notice, setNotice] = useState('');
-  let [answers, setAnswers] = useState({ correct: 0, wrong: 0 });
-  let [form, setForm] = useState('');
+  let [answers, setAnswers] = useState({correct: 0, wrong: 0});
 
   useEffect(() => {
     setSubmitButton(() =>
@@ -44,24 +43,16 @@ function App() {
     } else {
       setNotice('');
 
+      savingAnswers(currentAnswer);
+      
       if (ev.target.innerHTML === 'Next') {
-        savingAnswers(currentAnswer);
         setCurrent(++current);
         setCurrentQuestion(myData.questions[`${current}`]);
       } else if (ev.target.innerHTML === 'Result') {
-        savingAnswers(currentAnswer);
         form.querySelector('.form-div').classList.add('hidden');
         form.querySelector('.result-div').classList.remove('hidden');
-
-
-
-        for (const key in answers) {
-          console.log(answers);
-
-          const element = answers[key];
-          // console.log(element);
-
-        }
+        
+        
       }
 
     }
@@ -73,20 +64,18 @@ function App() {
     let isCorrect = givenAnswer.isCorrect;
 
     if (isCorrect === true) {
-      let oldNum = answers.correct;
-      setAnswers(oldState => ({
-        ...oldState, correct: oldNum + 1
-      }))
+      setAnswers({
+        ...answers,
+        correct: answers.correct + 1
+      })
     } else {
-      let oldNum = answers.wrong;
-      setAnswers(oldState => ({
-        ...oldState, wrong: oldNum + 1
-      }))
+      setAnswers({
+        ...answers,
+        wrong: answers.wrong + 1
+      })
     }
   }
-
-
-
+  
 
   return (
     <div className="App">
@@ -94,7 +83,9 @@ function App() {
         <div className="question-wrapper">
           <form>
             <div className="result-div hidden">
-              Your result is {'1'}
+              <h3>Your result: </h3>
+              - correct answers: {answers.correct} <br />
+              - wrong answers: {answers.wrong}
             </div>
             <div className="form-div">
               <Question data={currentQuestion} />

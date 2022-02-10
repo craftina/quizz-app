@@ -22,7 +22,10 @@
 
 
 .next-btn button{
+  font-size: 12pt;
+  font-weight: 600;
   background-color: #FFBFC7;
+  border-color: #FF949F;
   width: 25%;
   border-radius: 1em;
   padding: 0.5em;
@@ -38,4 +41,10 @@
 
 .hidden{
   display:none;
+}
+
+.result-div{
+  font-size: 14pt;
+  font-weight: 600;
+  padding-bottom: 20pt;
 }

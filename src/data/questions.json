@@ -31,30 +31,30 @@
             "id": 1
         },
         "2": {
-            "question": "What is the children prop?",
+            "question": "What is the default local host port that a React development server uses?",
             "answers": [
                 {
                     "idAnswer": "2a",
                     "bullet": "a",
-                    "answerText": "A property that adds child values to state",
-                    "isCorrect": false
+                    "answerText": "3000",
+                    "isCorrect": true
                 },
                 {
                     "idAnswer": "2b",
                     "bullet": "b",
-                    "answerText": "A property that lets you nest components in other components",
-                    "isCorrect": true
+                    "answerText": "5000",
+                    "isCorrect": false
                 },
                 {
                     "idAnswer": "2c",
                     "bullet": "c",
-                    "answerText": "A property that lets you set an object as a property",
+                    "answerText": "3500",
                     "isCorrect": false
                 },
                 {
                     "idAnswer": "2d",
                     "bullet": "d",
-                    "answerText": "A property that lets you set an object as a property",
+                    "answerText": "8080",
                     "isCorrect": false
                 }
             ],
@@ -89,6 +89,216 @@
                 }
             ],
             "id": 3
+        },
+        "4": {
+            "question": "A copy of the 'real' DOM that is kept in memory is called what?",
+            "answers": [
+                {
+                    "idAnswer": "4a",
+                    "bullet": "a",
+                    "answerText": "Virtual DOM",
+                    "isCorrect": true
+                },
+                {
+                    "idAnswer": "4b",
+                    "bullet": "b",
+                    "answerText": "Shadow DOM",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "4c",
+                    "bullet": "c",
+                    "answerText": "React DOM",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "4d",
+                    "bullet": "d",
+                    "answerText": "DOM",
+                    "isCorrect": false
+                }
+            ],
+            "id": 4
+        },
+        "5": {
+            "question": "When rendering a list using the JavaScript map() method, what is required for each element rendered?",
+            "answers": [
+                {
+                    "idAnswer": "5a",
+                    "bullet": "a",
+                    "answerText": "data",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "5b",
+                    "bullet": "b",
+                    "answerText": "index",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "5c",
+                    "bullet": "c",
+                    "answerText": "key",
+                    "isCorrect": true
+                },
+                {
+                    "idAnswer": "5d",
+                    "bullet": "d",
+                    "answerText": "id",
+                    "isCorrect": false
+                }
+            ],
+            "id": 5
+        },
+        "6": {
+            "question": "What is the correct syntax to import a Component from React?",
+            "answers": [
+                {
+                    "idAnswer": "6a",
+                    "bullet": "a",
+                    "answerText": "import Component from 'react'",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "6b",
+                    "bullet": "b",
+                    "answerText": "import React.Component from 'react'",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "6c",
+                    "bullet": "c",
+                    "answerText": "import [ Component ] from 'react'",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "6d",
+                    "bullet": "d",
+                    "answerText": "import { Component } from 'react'",
+                    "isCorrect": true
+                }
+            ],
+            "id": 6
+        },
+        "7": {
+            "question": "Which of the following is NOT a rule for React Hooks?",
+            "answers": [
+                {
+                    "idAnswer": "7a",
+                    "bullet": "a",
+                    "answerText": "Hooks can only be called inside React Function components",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "7b",
+                    "bullet": "b",
+                    "answerText": "Hooks can only be called at the top level of a component",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "7c",
+                    "bullet": "c",
+                    "answerText": "Hooks can be called in Class or Function components",
+                    "isCorrect": true
+                },
+                {
+                    "idAnswer": "7d",
+                    "bullet": "d",
+                    "answerText": "Hooks cannot be conditional",
+                    "isCorrect": false
+                }
+            ],
+            "id": 7
+        },
+        "8": {
+            "question": "Why should you avoid copying the values of props into a component's state?",
+            "answers": [
+                {
+                    "idAnswer": "8a",
+                    "bullet": "a",
+                    "answerText": "Because you should never mutate state",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "8b",
+                    "bullet": "b",
+                    "answerText": "Because that would create two instances of the same state that could become out of sync",
+                    "isCorrect": true
+                },
+                {
+                    "idAnswer": "8c",
+                    "bullet": "c",
+                    "answerText": "Because prop values cannot be stored in state",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "8d",
+                    "bullet": "d",
+                    "answerText": "Because you want to allow data to flow back up to the parent",
+                    "isCorrect": false
+                }
+            ],
+            "id": 8
+        },
+        "9": {
+            "question": "What does myReactApp refer to in the following command? - npx create-react-app myReactApp",
+            "answers": [
+                {
+                    "idAnswer": "9a",
+                    "bullet": "a",
+                    "answerText": "The directory to create the new app in",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "9b",
+                    "bullet": "b",
+                    "answerText": "A reference to an existing app",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "9c",
+                    "bullet": "c",
+                    "answerText": "The type of app to create",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "9d",
+                    "bullet": "d",
+                    "answerText": "The name you want to use for the new app",
+                    "isCorrect": true
+                }
+            ],
+            "id": 9
+        },
+        "10": {
+            "question": "What command is used to start the React local development server?",
+            "answers": [
+                {
+                    "idAnswer": "10a",
+                    "bullet": "a",
+                    "answerText": "npm start",
+                    "isCorrect": true
+                },
+                {
+                    "idAnswer": "10b",
+                    "bullet": "b",
+                    "answerText": "npm run dev",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "10c",
+                    "bullet": "c",
+                    "answerText": "npm serve",
+                    "isCorrect": false
+                },
+                {
+                    "idAnswer": "10d",
+                    "bullet": "d",
+                    "answerText": "npm build",
+                    "isCorrect": false
+                }
+            ],
+            "id": 10
         }
     }
 }
