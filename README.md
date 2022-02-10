@@ -1,3 +1,21 @@
+# About the project
+This is a react application for React quiz. It is created via React written in JavaScript and the data is included in a .json file.
+
+The main code is in the App.js file and the component for the separate questions is in Questions.js.
+The app contains the following logic:
+- On the initial load loads the first question, the possible answers and next button.
+- On clicking the next button loads the next question
+- If it is the last questions loads Result button
+- On clicking Result button the div, which contains the questions, becomes hidden and the div with the results becomes visible
+- In the code is used useState and useEffect Hooks
+
+## icon
+https://icons8.com/icon/18693/question-mark
+
+## react quiz
+The questions in the quizz are taken from :
+https://www.w3schools.com/quiztest/quiztest.asp?qtest=REACT
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -35,20 +53,3 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-# About the project
-This is a react application for React quiz. It is created via React written in JavaScript and the data is included in a .json file.
-
-The main code is in the App.js file and the component for the separate questions is in Questions.js.
-The app contains the following logic:
-- On the initial load loads the first question, the possible answers and next button.
-- On clicking the next button loads the next question
-- If it is the last questions loads Result button
-- On clicking Result button the div, which contains the questions, becomes hidden and the div with the results becomes visible
-- In the code is used useState and useEffect Hooks
-
-## icon
-https://icons8.com/icon/18693/question-mark
-
-## react quiz
-The questions in the quizz are taken from :
-https://www.w3schools.com/quiztest/quiztest.asp?qtest=REACT
